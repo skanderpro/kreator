@@ -437,7 +437,7 @@ function CatalogPage() {
                                                             <div className="catalog-list-item-info-item">
                                                                 {item.rooms}{" "}
                                                                 <span>
-                                                                    кімната
+                                                                   {`кімнат${item.rooms >= 2 ? 'и' : 'а'}`}
                                                                 </span>
                                                             </div>
                                                             <div className="catalog-list-item-info-item">
