@@ -250,7 +250,6 @@ function CatalogPage() {
                                                 placeholder={`від: ${apartmentsMeta.data.area.min}`}
                                                 value={formik.values.areaFrom}
                                             />
-                                            
                                         </div>
                                         <div className="filter-input">
                                             <input
@@ -264,7 +263,6 @@ function CatalogPage() {
                                                 }
                                                 value={formik.values.areaTo}
                                             />
-                                            
                                         </div>
                                     </div>
                                 </div>
@@ -336,7 +334,7 @@ function CatalogPage() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="card-apartments-filter-item">
+                                {/* <div className="card-apartments-filter-item">
                                     <label>Спеціальні умови</label>
                                     <div className="card-apartments-filter-inner">
                                         <div className="list-tab">
@@ -387,7 +385,7 @@ function CatalogPage() {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                                 <button
                                     className="btn btn-primary"
                                     type="button"
@@ -437,7 +435,7 @@ function CatalogPage() {
                                                             <div className="catalog-list-item-info-item">
                                                                 {item.rooms}{" "}
                                                                 <span>
-                                                                   {`кімнат${item.rooms >= 2 ? 'и' : 'а'}`}
+                                                                    {`кімнат${item.rooms >= 2 ? "и" : "а"}`}
                                                                 </span>
                                                             </div>
                                                             <div className="catalog-list-item-info-item">
@@ -450,7 +448,7 @@ function CatalogPage() {
                                                     ) : (
                                                         <>
                                                             <div className="catalog-list-item-info-item">
-                                                                Тип: підземний 
+                                                                Тип: підземний
                                                                 <span>
                                                                     -1 поверх
                                                                 </span>
