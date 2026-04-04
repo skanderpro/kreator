@@ -3,6 +3,7 @@
 use App\Http\Controllers\Api\ApartmentController;
 use App\Http\Controllers\Api\BuildStepController;
 use App\Http\Controllers\Api\ContactRequestController;
+use App\Http\Controllers\Api\ContentPageController;
 use App\Http\Controllers\Api\DocumentController;
 use App\Http\Controllers\Api\FeatureController;
 use App\Http\Controllers\Api\GalleryItemsController;
@@ -47,6 +48,10 @@ Route::name('settings.')->prefix('/settings')->group(function () {
 
 Route::name('technology.')->prefix('/technology')->group(function () {
     Route::get('', [TechnologyController::class, 'index'])->name('index');
+});
+
+Route::name('contentPages.')->prefix('/content-pages')->group(function () {
+    Route::get('{page:slug}', [ContentPageController::class, 'show'])->name('show');
 });
 
 Route::name('contact-request.')->prefix('/contact-request')->group(function () {
