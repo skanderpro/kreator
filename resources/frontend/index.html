@@ -12,11 +12,32 @@
       rel="stylesheet"
     />
       {!! $seo ?? '<title>kreatorbud</title>' !!}
-      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-PC7HNWW2');</script>
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-PM1B3DRP5R"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+      </script>
+      <script>
+
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-PM1B3DRP5R');
+
+          function script(){
+              var ga1 = document.createElement('script');
+              ga1.type = 'text/javascript';
+              ga1.id = 'crm-callback-form';
+              ga1.async = true;
+              ga1.setAttribute('data-id', 'cf8d6fbc-2f59-4a78-8e67-d83961f9cbcc');
+              ga1.setAttribute('data-lang', 'uk');
+              ga1.setAttribute('data-google-id', 'G-PM1B3DRP5R');
+              ga1.setAttribute('data-project-id', '291');
+              ga1.src = '//callback.adsaver-new.com/main.js';
+              document.getElementsByTagName('body')[0].appendChild(ga1);
+          }
+
+          script()
+      </script>
 
   </head>
   <body>
@@ -39,7 +60,7 @@
   <!-- End Meta Pixel Code -->
 
   <noscript>
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PC7HNWW2"
+      <iframe src="https://www.googletagmanager.com/ns.html?id=G-PM1B3DRP5R"
                     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div id="root"></div>
